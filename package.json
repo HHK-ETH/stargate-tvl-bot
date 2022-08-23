@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "volume": "node volume.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
   "dependencies": {
     "discord.js": "^13.2.0",
     "dotenv": "^10.0.0",
-    "ethers": "^5.4"
+    "ethers": "^5.4",
+    "graphql": "^16.3.0",
+    "graphql-request": "^4.2.0"
   },
   "type": "module"
 }

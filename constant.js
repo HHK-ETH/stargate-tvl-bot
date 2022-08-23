@@ -1,3 +1,18 @@
+const POOL_SUBGRAPHS = [
+  'https://api.thegraph.com/subgraphs/name/goldennaim/bsc-stargate-pool-usdt',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/bsc-stargate-pool-busd',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/avalanche-stargate-pool-usdc',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/avalanche-stargate-pool-usdt',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/polygon-stargate-pool-usdc',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/polygon-stargate-pool-usdt',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/arbitrum-stargate-pool-usdc',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/arbitrum-stargate-pool-usdt',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/optimism-stargate-pool-usdc',
+  'https://api.thegraph.com/subgraphs/name/goldennaim/fantom-stargate-pool-usdc',
+];
+
+const MAINNET_POOL_SUBGRAPH = 'https://api.thegraph.com/subgraphs/name/goldennaim/stargate';
+
 //could probably be easier with subgraphs
 const NETWORKS = [
   {
@@ -251,4 +266,4 @@ const ERC20ABI = [
   },
 ];
 
-export { ERC20ABI, NETWORKS };
+export { ERC20ABI, NETWORKS, POOL_SUBGRAPHS, MAINNET_POOL_SUBGRAPH };
