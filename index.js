@@ -41,6 +41,7 @@ setInterval(async function () {
   try {
     if (client.user) {
       const tvl = await fetchTvl();
+      console.log(tvl);
       client.user.setActivity('TVL=' + tvl + 'B$', {
         type: 'PLAYING',
       });
@@ -51,6 +52,6 @@ setInterval(async function () {
   } catch (e) {
     console.log(e);
   }
-}, 600_000);
+}, 300_000);
 
 client.login(process.env.DISCORD_TOKEN);
